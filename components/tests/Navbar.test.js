@@ -1,6 +1,8 @@
 import React from "react";
 import { render, fireEvent, screen } from "@testing-library/react";
 import Navbar from "../Navbar";
+import "@testing-library/jest-dom/extend-expect";
+import waitForElement from "@testing-library/dom";
 
 describe("Navbar", () => {
   it("should render correctly", () => {

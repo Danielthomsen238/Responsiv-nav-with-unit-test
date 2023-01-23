@@ -58,6 +58,8 @@
     "zustand": "^4.3.2"
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.20.0",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",
@@ -85,7 +87,8 @@
     "react-test-renderer": "18.1.0",
     "ts-jest": "27.1.4",
     "ts-node": "~10.8.0",
-    "typescript": "~4.7.2"
+    "typescript": "~4.7.2",
+    "wait-for-element": "^1.0.2"
   },
   "jest": {
     "testEnvironment": "jsdom"

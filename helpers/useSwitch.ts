@@ -1,11 +1,14 @@
 import { create } from "zustand";
 
 interface Switch {
-  toggleClass: boolean;
+  toggle: boolean;
   switchToggle: () => void;
 }
 
 export const useSwitch = create<Switch>((set) => ({
-  toggleClass: false,
-  switchToggle: () => set((state) => state!),
+  toggle: false,
+  switchToggle: () =>
+    set((state) => {
+      return { toggle: !state.toggle };
+    }),
 }));

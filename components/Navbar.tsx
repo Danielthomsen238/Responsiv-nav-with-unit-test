@@ -3,11 +3,14 @@ import Link from "next/link";
 import { useSwitch } from "../helpers/useSwitch";
 
 const Navbar = () => {
-  const { toggleClass, switchToggle } = useSwitch();
-  console.log(toggleClass);
+  const { toggle, switchToggle } = useSwitch();
+  console.log(toggle);
   return (
-    <StyledNav data-testid="Navbar">
-      <div>
+    <StyledNav show={toggle} data-testid="Navbar">
+      <div data-testid="burger" onClick={() => switchToggle()}>
+        Burger
+      </div>
+      <div data-testid="menu" className="menu">
         <Link data-testid="Home" href="/">
           Home
         </Link>

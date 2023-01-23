@@ -4,16 +4,16 @@ import { renderHook, fireEvent, act } from "@testing-library/react";
 describe("useSwitch", () => {
   it("should return toggleClass and switchToggle", () => {
     const { result } = renderHook(() => useSwitch());
-    expect(result.current.toggleClass).toBeDefined();
+    expect(result.current.toggle).toBeDefined();
     expect(result.current.switchToggle).toBeDefined();
   });
   it("should switch toggleClass when switchToggle is called", () => {
     const { result } = renderHook(() => useSwitch());
-    const { toggleClass } = result.current;
-    expect(toggleClass).toBe(false);
+    const { toggle } = result.current;
+    expect(toggle).toBe(false);
     act(() => {
       result.current.switchToggle();
     });
-    expect(result.current.toggleClass).toBe(false);
+    expect(result.current.toggle).toBe(true);
   });
 });

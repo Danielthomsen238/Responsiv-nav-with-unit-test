@@ -1,15 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm i
 npm run dev
 # or
+yarn i
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-##This is a templet for next.js app with my most used dependencies
+#Responsiv burger menu with no styling using zustand for the toggle function
+
+#Automatic unit test Using Jest and react-testing-library
